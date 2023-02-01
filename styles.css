@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.papa {
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+    "foto1 foto3 foto5 foto5"
+    "foto1 foto4 foto6 foto7"
+    "foto2 foto4 foto8 foto8";
+  padding: 10px;
+  gap: 10px;
+  width: 80%;
+}
+
+.foto {
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foto1 {
+  grid-area: foto1;
+  background: url("https://images.pexels.com/photos/3991396/pexels-photo-3991396.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto2 {
+  grid-area: foto2;
+  background: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto3 {
+  grid-area: foto3;
+  background: url("https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto4 {
+  grid-area: foto4;
+  background: url("https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto5 {
+  grid-area: foto5;
+  background: url("https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto6 {
+  grid-area: foto6;
+  background: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto7 {
+  grid-area: foto7;
+  background: url("https://images.pexels.com/photos/10622959/pexels-photo-10622959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.foto8 {
+  grid-area: foto8;
+  background: url("https://images.pexels.com/photos/3063411/pexels-photo-3063411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
